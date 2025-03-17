@@ -1,0 +1,15 @@
+.display {
+  margin: 12px auto;
+  width: 260px; /* Slightly increased width */
+  height: 25px;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+}

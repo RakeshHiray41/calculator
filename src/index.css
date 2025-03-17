@@ -1,0 +1,137 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #1e1e1e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 600;
+  color: #4fa3ff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #3978d3;
+  text-decoration: underline;
+}
+
+/* Centering the content */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* Full height of viewport */
+  width: 100vw;  /* Full width of viewport */
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  padding: 20px;
+}
+
+/* Adjusting container for better centering */
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 0.7em 1.4em;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(145deg, #292929, #1a1a1a);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 250px;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #383838, #232323);
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  background: linear-gradient(145deg, #181818, #0f0f0f);
+  transform: scale(0.98);
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #646cff;
+  outline-offset: 3px;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #212529;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #3b82f6;
+  }
+
+  a:hover {
+    color: #2563eb;
+  }
+
+  body {
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+  }
+
+  .container {
+    background: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  button {
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    color: #333;
+  }
+
+  button:hover {
+    background: linear-gradient(145deg, #eaeaea, #d1d1d1);
+  }
+
+  button:active {
+    background: linear-gradient(145deg, #c4c4c4, #b1b1b1);
+  }
+}

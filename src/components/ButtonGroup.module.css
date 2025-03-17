@@ -1,0 +1,107 @@
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background: #282a36; /* Updated dark background */
+  border-radius: 15px;
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.5);
+  width: 260px; /* Slightly increased width */
+  height: 450px; /* Increased height */
+  margin: auto;
+}
+
+/* Updated Button Styles */
+.button {
+  width: 55px; /* Increased button size */
+  height: 55px;
+  margin: 6px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: linear-gradient(145deg, #5c84c4, #1f2937); /* Dark blue-gray gradient */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(95, 14, 14, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: linear-gradient(145deg, #f5859d, #374151);
+  transform: scale(1.08);
+}
+
+.button:active {
+  background: #111827;
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Operator Buttons Styling */
+.button.operator {
+  background: linear-gradient(145deg, #fbbf24, #f59e0b); /* Golden yellow */
+  color: #222;
+}
+
+.button.operator:hover {
+  background: linear-gradient(145deg, #f59e0b, #d97706);
+}
+
+/* Special Buttons */
+.button.clear {
+  background: linear-gradient(145deg, #ef4444, #dc2626); /* Vibrant red */
+}
+
+.button.clear:hover {
+  background: linear-gradient(145deg, #dc2626, #b91c1c);
+}
+
+.button.equals {
+  background: linear-gradient(145deg, #10b981, #059669); /* Green */
+}
+
+.button.equals:hover {
+  background: linear-gradient(145deg, #059669, #047857);
+}
+
+/* Number Buttons */
+.button.number {
+  background: linear-gradient(145deg, #3b82f6, #2563eb); /* Blue */
+}
+
+.button.number:hover {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+.button:hover {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  transform: scale(1.05);
+}
+
+.button:active {
+  background: #d3adad;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Special Styling for Operators */
+
+
+
+.button:nth-child(1) { /* Clear button "C" */
+  background: #ff3b30;
+  color: white;
+}
+
+.button:nth-child(1):hover {
+  background: #e02f25;
+}
